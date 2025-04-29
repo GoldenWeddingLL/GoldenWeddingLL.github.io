@@ -1,6 +1,7 @@
 {
     "name": "Bodas de Oro - L&L",
     "short_name": "Bodas de Oro",
+    "lang": "es",
     "start_url": "/",
     "display": "standalone",
     "orientation": "portrait",

@@ -407,6 +407,8 @@ main .invitation img.dots {
   }
   main.card .title .ribbon h2 {
     font-size: 2.5rem;
+    left: 5%;
+    right: 5%;
   }
   main.card .title .ago h3 {
     font-size: 1.2rem;
@@ -417,18 +419,19 @@ main .invitation img.dots {
   }
   
   main .names {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
+    margin: -2rem -3rem;
   }
   main .names div.name {
     max-width: 12rem;
   }
   main .names > div {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: normal;
   }
   main.card img.deco.left {
-    height: 35%;
-    top: 33%;
+    height: 42%;
+    bottom: 27.5%;
   }
 
   main.card .row {
