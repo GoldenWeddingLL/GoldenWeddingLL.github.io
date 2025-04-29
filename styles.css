@@ -400,6 +400,7 @@ main .invitation img.dots {
   main.card {
     max-width: 28rem;
     margin: 1rem auto;
+    padding: 1rem;
   }
   main.card .title .ribbon {
     width: 140%;
@@ -439,8 +440,9 @@ main .invitation img.dots {
   }
   
   main .invitation {
-    padding-left: 0px;
-    gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 2rem;
   }
   main .invitation p {
     padding-left: 0px;
@@ -464,10 +466,10 @@ main .invitation img.dots {
   }
   
   main .invitation img.lines {
-    right: -2.75rem;
+    right: -2.25rem;
   }
   main .invitation img.dots {
-    right: -4rem;
+    right: -3rem;
     bottom: -4rem;
   }
 }
