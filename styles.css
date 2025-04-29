@@ -245,7 +245,7 @@ main.card .back.border {
 main.card .back.blur {
   filter: blur(10px);
 }
-main.card .deco.left {
+main.card img.deco.left {
   bottom: 0px;
   height: 67%;
   left: 0%;
@@ -330,19 +330,17 @@ main .names > div {
   font-size: 4rem;
 }
 main .names div.name {
-  /* max-width: 24rem; */
-  /* width: 18rem; */
   width: fit-content;
 }
 
 /* Invitation data */
 main .invitation {
   /* max-width: 36rem; */
-  /* padding-left: 6rem; */
   padding-left: 7rem;
   max-width: 42rem;
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 3rem;
   z-index: 10;
 }
@@ -382,6 +380,109 @@ main .invitation img.lines {
   top: -1rem;
 }
 main .invitation img.dots {
-  bottom: -8.5%;
-  right: -12%;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1366px) {
+  body {
+    font-size: 14pt;
+  }
+}
+
+@media (max-width: 840px) {
+  body {
+    font-size: 12pt;
+  }
+
+  main.card {
+    max-width: 28rem;
+    margin: 1rem auto;
+  }
+  main.card .title .ribbon {
+    width: 140%;
+    translate: -15%;
+  }
+  main.card .title .ribbon h2 {
+    font-size: 2.5rem;
+  }
+  main.card .title .ago h3 {
+    font-size: 1.2rem;
+  }
+  main.card .title .ago h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  
+  main .names {
+    padding: 5rem 2rem;
+  }
+  main .names div.name {
+    max-width: 12rem;
+  }
+  main .names > div {
+    font-size: 3rem;
+    line-height: normal;
+  }
+  main.card img.deco.left {
+    height: 35%;
+    top: 33%;
+  }
+
+  main.card .row {
+    flex-direction: column;
+  }
+  
+  main .invitation {
+    padding-left: 0px;
+    gap: 1rem;
+  }
+  main .invitation p {
+    padding-left: 0px;
+  }
+  main .invitation p:first-of-type {
+    padding-left: 6rem;
+  }
+  
+  main .invitation .data {
+    margin-top: 2rem;
+  }
+  main .invitation #main-data {
+    margin-left: 0px;
+    gap: 0px;
+  }
+  main .invitation #main-data > div:first-of-type {
+    padding-bottom: 1rem;
+  }
+  main .invitation #main-data > div:last-of-type {
+    padding-top: 1rem;
+  }
+  
+  main .invitation img.lines {
+    right: -2.75rem;
+  }
+  main .invitation img.dots {
+    right: -4rem;
+    bottom: -4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 8pt;
+  }
+
+  main.card .title .ribbon h2 {
+    font-size: 2rem;
+  }
+  main.card .title .ago h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  
+  main .invitation #main-data .col {
+    padding: 0.75rem;
+  }
 }
