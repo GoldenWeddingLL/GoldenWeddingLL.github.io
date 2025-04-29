@@ -206,6 +206,15 @@ h6[class$="-gradient-text"] {
   z-index: -1;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 /*=== MAIN ===*/
 main.card {
   max-width: 50rem;
@@ -217,6 +226,11 @@ main.card, main.card > .back {
   border-radius: 1rem;
   border-top-right-radius: 25rem;
   border-top-left-radius: 25rem;
+}
+
+main img.deco {
+  position: absolute;
+  z-index: 0;
 }
 
 /* Back */
@@ -231,13 +245,11 @@ main.card .back.border {
 main.card .back.blur {
   filter: blur(10px);
 }
-main.card .decor-left {
-  position: absolute;
+main.card .deco.left {
   bottom: 0px;
   height: 67%;
   left: 0%;
   translate: -41.5%;
-  z-index: 0;
 }
 
 /* title */
@@ -343,23 +355,33 @@ main .invitation p {
 main .invitation .data {
   font-family: var(--font-capital);
   font-size: 1rem;
+  position: relative;
 }
-main .invitation .data.row {
-  display: flex;
+main .invitation #main-data {
   justify-content: center;
   align-items: stretch;
-  gap: 3rem;
+  gap: 1rem;
   text-align: center;
-  margin-left: 6rem;
+  margin-left: 7rem;
 }
-main .invitation .data.row .col {
-  display: flex;
-  flex-direction: column;
+main .invitation #main-data .col {
   justify-content: space-between;
   gap: 0.5rem;
+  background: radial-gradient(circle, #ffffffFF 25%, #ffffff00 67%);
+  background-size: 100% 100%;
+  padding: 2rem 1.5rem;
 }
-main .invitation .data.row .col img {
+main .invitation #main-data .col img {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0 auto;
+}
+
+main .invitation img.lines {
+  right: -5.75rem;
+  top: -2.5rem;
+}
+main .invitation img.dots {
+  bottom: -8.5%;
+  right: -12%;
 }
