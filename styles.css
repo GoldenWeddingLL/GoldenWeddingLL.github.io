@@ -53,7 +53,7 @@ textarea {
   background-color: var(--background-color);
   box-shadow: var(--box-shadow-default);
   color: var(--text-primary);
-  font-size: 1rem;
+  font-size: 1em;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -217,7 +217,7 @@ h6[class$="-gradient-text"] {
 
 /*=== MAIN ===*/
 main.card {
-  max-width: 50rem;
+  max-width: 50em;
   margin: 2rem auto;
   padding-bottom: 4rem;
 }
@@ -276,7 +276,7 @@ main.card .title .ribbon h2 {
   translate: 0px -100%;
   transform: rotateZ(-11deg);
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.2em;
   font-weight: normal;
   font-family: var(--font-title);
   text-shadow: -1px -1px 0 var(--gold-dark), 1px -1px 0 var(--gold-dark), -1px 1px 0 var(--gold-dark), 1px 1px 0 var(--gold-dark);
@@ -290,14 +290,14 @@ main.card .title .ago {
 }
 main.card .title .ago h1 {
   font-family: var(--font-title);
-  font-size: 8rem;
+  font-size: 8em;
   font-weight: bolder;
   line-height: 8rem;
   margin-bottom: -1rem;
   filter: drop-shadow(0 0 0.25rem var(--light)) drop-shadow(0 0 4rem var(--light));
 }
 main.card .title .ago h3 {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: bold;
   color: var(--gold-dark);
   -webkit-text-stroke: 0.5px var(--shadow-light);
@@ -315,7 +315,7 @@ main .names {
   align-items: center;
   gap: 1.5rem;
   padding: 8rem 2rem;
-  margin: -2rem -5rem;
+  margin: 0px -5rem;
   z-index: 10;
 }
 main .names .back {
@@ -326,8 +326,8 @@ main .names .back {
 }
 main .names > div {
   text-align: center;
-  line-height: 3.375rem;
-  font-size: 4rem;
+  line-height: 4rem;
+  font-size: 4em;
 }
 main .names div.name {
   width: fit-content;
@@ -335,9 +335,9 @@ main .names div.name {
 
 /* Invitation data */
 main .invitation {
-  /* max-width: 36rem; */
+  /* max-width: 36em; */
   padding-left: 7rem;
-  max-width: 42rem;
+  max-width: 42em;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -345,14 +345,14 @@ main .invitation {
   z-index: 10;
 }
 main .invitation p {
-  font-size: 2.4rem;
+  font-size: 2.4em;
 }
 main .invitation p {
   padding-left: 10rem;
 }
 main .invitation .data {
   font-family: var(--font-capital);
-  font-size: 1rem;
+  font-size: 1em;
   position: relative;
 }
 main .invitation #main-data {
@@ -370,8 +370,8 @@ main .invitation #main-data .col {
   padding: 2rem 1.5rem;
 }
 main .invitation #main-data .col img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.5em;
+  height: 2.5em;
   margin: 0 auto;
 }
 
@@ -382,7 +382,7 @@ main .invitation img.lines {
 main .invitation img.dots {
   bottom: 0px;
   right: 0px;
-  border-radius: 1rem;
+  border-radius: 1em;
 }
 
 /* RESPONSIVE */
@@ -394,11 +394,11 @@ main .invitation img.dots {
 
 @media (max-width: 840px) {
   body {
-    font-size: 12pt;
+    font-size: 10pt;
   }
 
   main.card {
-    max-width: 28rem;
+    max-width: 28em;
     margin: 1rem auto;
     padding: 1rem;
   }
@@ -407,15 +407,15 @@ main .invitation img.dots {
     translate: -15%;
   }
   main.card .title .ribbon h2 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     left: 5%;
     right: 5%;
   }
   main.card .title .ago h3 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
   main.card .title .ago h1 {
-    font-size: 6rem;
+    font-size: 6em;
     line-height: 6rem;
   }
   
@@ -424,10 +424,10 @@ main .invitation img.dots {
     margin: -2rem -3rem;
   }
   main .names div.name {
-    max-width: 12rem;
+    max-width: 12em;
   }
   main .names > div {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     line-height: normal;
   }
   main.card img.deco.left {
@@ -466,11 +466,11 @@ main .invitation img.dots {
   }
   
   main .invitation img.lines {
-    right: -2.25rem;
+    right: -2.25em;
   }
   main .invitation img.dots {
-    right: -3rem;
-    bottom: -4rem;
+    right: -3em;
+    bottom: -4em;
   }
 }
 
@@ -480,10 +480,10 @@ main .invitation img.dots {
   }
 
   main.card .title .ribbon h2 {
-    font-size: 2rem;
+    font-size: 2em;
   }
   main.card .title .ago h1 {
-    font-size: 5rem;
+    font-size: 5em;
     line-height: 5rem;
   }
   
