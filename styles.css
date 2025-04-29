@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Tangerine:wght@400;700&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+/* Basic Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Neomorphic style */
+:root {
+  --background-color: #f0f0f3;
+  /* --shadow-dark: #b8b8bb; */
+  --shadow-dark: #63637480;
+  --shadow-light: #ffffffaa;
+  --light: #ffffff;
+  --text-primary: #555;
+  --text-secondary: #333;
+  --border-radius-default: 8px; /* Default border radius for form elements */
+  --box-shadow-default: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  --box-shadow-inset: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+  --font-body:"Tangerine", Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  font-size: 16pt;
+}
+
+/* Default Neomorphic Styles for Form Elements and hr */
+button,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+select,
+textarea {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius-default);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-default);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  /* Add custom styling for select to prevent default arrow issues */
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-primary) 50%),
+    linear-gradient(135deg, var(--text-primary) 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-inset);
+  margin: 20px 0;
+}
+
+/* Focus states for better accessibility */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light);
+}
+
+/* Hover and Active states for buttons */
+button:hover {
+  box-shadow: 2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+
+button:active {
+  box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light);
+  color: var(--text-secondary);
+}
+
+/* Styling for forms (you might want to add more specific form layout styles) */
+form {
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+form > div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+
+/* CUSTOM */
+:root {
+  --background-color: #F0F1F2;
+  --gold-light: #f5d64a; /* Light gold */
+  --gold-medium: #eeba00; /* Medium gold */
+  --gold-dark: #ac7c04; /* Dark gold */
+  --gold-gradient: linear-gradient(-45deg, var(--gold-dark), var(--gold-medium), var(--gold-light), var(--gold-medium), var(--gold-dark));
+  --silver-light: #bfbfbf; /* Light silver */
+  --silver-medium: #a6a6a6; /* Medium silver */
+  --silver-dark: #8c8c8c; /* Dark silver */
+  --shadow-dark: #C1B7A9;
+  --silver-gradient: linear-gradient(-45deg, var(--silver-dark), var(--silver-medium), var(--silver-light), var(--silver-medium), var(--silver-dark));
+  --font-body:"Tangerine", Georgia, "Times New Roman", Times, serif;
+  --font-capital: "Cinzel Decorative", Georgia, "Times New Roman", Times, serif;
+  --font-title: "Oleo Script Swash Caps", cursive;  
+}
+
+body {
+  background-image: url("./images/background.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 33%;
+  background-color: var(--background-color);
+  /* background-blend-mode: overlay; */
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  color: var(--gold-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-capital);
+  /* color: var(--text-secondary); */
+  text-align: center;
+  font-weight: normal;
+}
+
+.card {
+  position: relative;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+.gold-gradient, .gold-gradient-text {
+  background: var(--gold-gradient);
+}
+.silver-gradient, .silver-gradient-text {
+  background: var(--silver-gradient);
+}
+*[class$="-gradient-text"] {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+h1[class$="-gradient-text"], 
+h2[class$="-gradient-text"],
+h3[class$="-gradient-text"],
+h4[class$="-gradient-text"],
+h5[class$="-gradient-text"],
+h6[class$="-gradient-text"] {
+  letter-spacing: 0.1pt;
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-stroke: 0.5px var(--shadow-light);
+}
+
+.back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+/*=== MAIN ===*/
+main.card {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding-bottom: 4rem;
+}
+
+main.card, main.card > .back {
+  border-radius: 1rem;
+  border-top-right-radius: 25rem;
+  border-top-left-radius: 25rem;
+}
+
+/* Back */
+main.card .back.border {
+  top: -2pt;
+  left: -2pt;
+  right: -2pt;
+  bottom: -2pt;
+  width: calc(100% + 4pt);
+  height: calc(100% + 4pt);
+}
+main.card .back.blur {
+  filter: blur(10px);
+}
+main.card .decor-left {
+  position: absolute;
+  bottom: 0px;
+  height: 67%;
+  left: 0%;
+  translate: -41.5%;
+  z-index: 0;
+}
+
+/* title */
+main.card .title {
+  z-index: 2;
+  position: relative;
+}
+main.card .title .ribbon {
+  width: 110%;
+  translate: -5%;
+  margin: -5% auto -18%;
+  z-index: 10;
+  position: relative;
+}
+main.card .title .ribbon img {
+  width: 100%;
+  height: auto;
+}
+main.card .title .ribbon h2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  translate: 0px -100%;
+  transform: rotateZ(-11deg);
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: normal;
+  font-family: var(--font-title);
+  text-shadow: -1px -1px 0 var(--gold-dark), 1px -1px 0 var(--gold-dark), -1px 1px 0 var(--gold-dark), 1px 1px 0 var(--gold-dark);
+  color: var(--light);
+}
+main.card .title .ago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main.card .title .ago h1 {
+  font-family: var(--font-title);
+  font-size: 8rem;
+  font-weight: bolder;
+  line-height: 8rem;
+  margin-bottom: -1rem;
+  filter: drop-shadow(0 0 0.25rem var(--light)) drop-shadow(0 0 4rem var(--light));
+}
+main.card .title .ago h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--gold-dark);
+  -webkit-text-stroke: 0.5px var(--shadow-light);
+}
+
+/* Names */
+main .names {
+  background-image: url("./images/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 8rem 2rem;
+  margin: -2rem -5rem;
+  z-index: 10;
+}
+main .names .back {
+  top: -77%;
+  left: -15.5%;
+  right: -15.5%;
+  width: 130%;
+}
+main .names > div {
+  text-align: center;
+  line-height: 3.375rem;
+  font-size: 4rem;
+}
+main .names div.name {
+  /* max-width: 24rem; */
+  /* width: 18rem; */
+  width: fit-content;
+}
+
+/* Invitation data */
+main .invitation {
+  /* max-width: 36rem; */
+  /* padding-left: 6rem; */
+  padding-left: 7rem;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 10;
+}
+main .invitation p {
+  font-size: 2.4rem;
+}
+main .invitation p {
+  padding-left: 10rem;
+}
+main .invitation .data {
+  font-family: var(--font-capital);
+  font-size: 1rem;
+}
+main .invitation .data.row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  text-align: center;
+  margin-left: 6rem;
+}
+main .invitation .data.row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+main .invitation .data.row .col img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto;
+}

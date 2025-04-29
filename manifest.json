@@ -1,0 +1,16 @@
+{
+    "name": "Bodas de Oro - L&L",
+    "short_name": "Bodas de Oro",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#eeba00",
+    "theme_color": "#eeba00",
+    "icons": [
+        {
+            "src": "images/favicon.ico",
+            "sizes": "48x48 72x72 96x96 144x144 192x192 256x256 384x384 512x512",
+            "type": "image/x-icon"
+        }
+    ]
+}
