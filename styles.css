@@ -147,7 +147,7 @@ form label {
 }
 
 body {
-  background-image: url("./images/background.png");
+  background-image: url("./images/background_ext.png");
   background-repeat: repeat;
   background-position: center;
   background-attachment: fixed;
@@ -220,6 +220,9 @@ main.card {
   max-width: 50em;
   margin: 2rem auto;
   padding-bottom: 4rem;
+  background-image: url("./images/background_in.png");
+  background-repeat: repeat;
+  background-position: center;
 }
 
 main.card, main.card > .back {
@@ -376,9 +379,12 @@ main .invitation #main-data .col img {
   height: 2.5em;
   margin: 0 auto;
 }
+main .invitation #data-additional {
+  margin-bottom: 2rem;
+}
 
 main .invitation img.lines {
-  right: -5.75rem;
+  right: -2.675rem;
   top: -1rem;
 }
 main .invitation img.dots {
