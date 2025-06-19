@@ -373,6 +373,7 @@ main .invitation #main-data .col {
   background: radial-gradient(circle, #ffffffFF 25%, #ffffff00 67%);
   background-size: 100% 100%;
   padding: 2rem 1.5rem;
+  max-width: 50%;
 }
 main .invitation #main-data .col img {
   width: 2.5em;
@@ -388,9 +389,10 @@ main .invitation img.lines {
   top: -1rem;
 }
 main .invitation img.dots {
-  bottom: 0px;
-  right: 0px;
+  bottom: -2rem;
+  right: -1rem;
   border-radius: 1em;
+  z-index: -1;
 }
 
 /* RESPONSIVE */
