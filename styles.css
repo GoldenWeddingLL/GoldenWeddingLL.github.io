@@ -297,7 +297,7 @@ main.card .title .ago h1 {
   font-family: var(--font-title);
   font-size: 8em;
   font-weight: bolder;
-  line-height: 8rem;
+  line-height: 9.5rem;
   margin-bottom: -1rem;
   filter: drop-shadow(0 0 0.25rem var(--light)) drop-shadow(0 0 4rem var(--light));
 }
@@ -383,6 +383,9 @@ main .invitation #main-data .col img {
 main .invitation #data-additional {
   margin-bottom: 2rem;
 }
+main .invitation #data-additional > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
 
 main .invitation img.lines {
   right: -2.675rem;
@@ -466,6 +469,9 @@ main .invitation img.dots {
     margin-left: 0px;
     gap: 0px;
   }
+  main .invitation #main-data .col {
+    max-width: 100%;
+  }
   main .invitation #main-data > div:first-of-type {
     padding-bottom: 1rem;
   }
@@ -474,11 +480,10 @@ main .invitation img.dots {
   }
   
   main .invitation img.lines {
-    right: -2.25em;
+    right: -2.4em;
   }
   main .invitation img.dots {
     right: -3em;
-    bottom: -4em;
   }
 }
 
