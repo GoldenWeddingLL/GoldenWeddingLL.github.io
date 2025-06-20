@@ -128,6 +128,15 @@ form label {
   text-align: right;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+
 
 /* CUSTOM */
 :root {
@@ -164,6 +173,13 @@ h1, h2, h3, h4, h5, h6 {
   /* color: var(--text-secondary); */
   text-align: center;
   font-weight: normal;
+}
+
+a {
+  color: var(--gold-dark);
+}
+a:hover, a:active, a:focus {
+  color: var(--gold-medium);
 }
 
 .card {
@@ -367,15 +383,17 @@ main .invitation #main-data {
   text-align: center;
   margin-left: 7rem;
 }
-main .invitation #main-data .col {
-  justify-content: space-between;
-  gap: 0.5rem;
+main .invitation #main-data .item {
   background: radial-gradient(circle, #ffffffFF 25%, #ffffff00 67%);
   background-size: 100% 100%;
   padding: 2rem 1.5rem;
   max-width: 50%;
 }
-main .invitation #main-data .col img {
+main .invitation #main-data .col {
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+main .invitation #main-data img {
   width: 2.5em;
   height: 2.5em;
   margin: 0 auto;
@@ -390,6 +408,7 @@ main .invitation #data-additional > *:not(:last-child) {
 main .invitation img.lines {
   right: -2.675rem;
   top: -1rem;
+  z-index: -2;
 }
 main .invitation img.dots {
   bottom: -2rem;
@@ -469,7 +488,7 @@ main .invitation img.dots {
     margin-left: 0px;
     gap: 0px;
   }
-  main .invitation #main-data .col {
+  main .invitation #main-data .item {
     max-width: 100%;
   }
   main .invitation #main-data > div:first-of-type {
@@ -500,7 +519,7 @@ main .invitation img.dots {
     line-height: 5rem;
   }
   
-  main .invitation #main-data .col {
+  main .invitation #main-data .item {
     padding: 0.75rem;
   }
 }
